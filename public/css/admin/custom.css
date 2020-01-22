@@ -1,0 +1,35 @@
+li.list-group-head {
+    margin: 1em 1em 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+    color: #dfdfdf;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+i.menu-icon {
+    float: left;
+    width: 30px;
+    margin-top: 5px;
+}
+
+i.active {
+    float: right;
+}
+
+.sidenav-toggled i.menu-icon {
+    display: contents;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+:-moz-placeholder {
+    font-style: italic;
+}
+::-moz-placeholder {
+    font-style: italic;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+}

@@ -1,0 +1,367 @@
+/*<editor-fold desc="DASHBOARD SLIDE">*/
+
+/*<editor-fold desc="GLOBAL CSS">*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+html,
+body,
+.col-sm-3,
+#dashboard {
+  height: 100%;
+}
+
+#dashboard {
+  display: block;
+  background-color: #333;
+  background-size: cover;
+  padding: 15px 0;
+  color: #000;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+hr {
+  margin: 10px 0;
+  border-top: 1px solid #959595;
+}
+
+.col-sm-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px 0 0;
+}
+
+.col-sm-3:first-child {
+  padding: 0 15px;
+}
+
+.block {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  overflow: hidden;
+}
+
+.col-sm-3 > .block:last-child {
+  margin-bottom: 0;
+}
+
+.fill {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="DATE TIME BLOCK">*/
+
+#datetime {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#datetime #time {
+  font-size: calc(1rem + ((1vw + 2.75em) * 1.1111));
+  margin-bottom: 5px;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="FLIPPER">*/
+
+#flipper {
+  display: none;
+}
+
+/*<editor-fold desc="NO FOOD BLOCK">*/
+
+#no-food {
+  min-height: 332px;
+}
+
+#no-food > img {
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+#no-food > h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="CAMERA SURVEILLANCE"*/
+
+#camera-surveillance {
+  display: none;
+  min-height: 362px;
+}
+
+#camera-surveillance > img {
+  margin: auto;
+  display: block;
+  height: 30vh;
+}
+
+/*</editor-fold>*/
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="WEATHER BLOCK">*/
+
+#weather {
+  display: none;
+  min-height: 370px;
+}
+
+#weather #temperature {
+  width: 100%;
+}
+
+#weather #temperature {
+  overflow: hidden;
+}
+
+#weather #temperature #icon,
+#weather #temperature #temp {
+  float: left;
+  margin: 10px 0;
+}
+
+#weather #temperature #temp {
+  line-height: 128px;
+  margin-left: 10px;
+  font-size: calc(1rem + ((1vw + 2.4em) * 1.1111));
+}
+
+#weather #summary {
+  margin-bottom: 5px;
+}
+
+#weather #weatherdata {
+  overflow: hidden;
+}
+
+#weather #weatherdata p {
+  margin: 2px 0;
+}
+
+#weather #forecast {
+  margin-top: 15px;
+}
+
+#weather #forecast h5 {
+  margin-bottom: 5px;
+}
+
+#weather #forecast p {
+  margin: 0;
+}
+
+#weather #forecast .forecastday {
+  text-align: center;
+  width: 23%;
+  margin: 0 1%;
+  float: left;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="NU.NL / TWEAKERS BLOCK">*/
+
+#nu {
+  display: none;
+  height: 50%;
+}
+
+#tweakers {
+  display: none;
+  height: 100%;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: calc(100% - 50px);
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.story img {
+  width: 33%;
+  float: left;
+}
+
+.story {
+  overflow: hidden;
+}
+
+.story .content {
+  margin-left: 3%;
+  float: left;
+  width: 64%;
+}
+
+.story h4 {
+  margin-bottom: 5px;
+}
+
+.story span {
+  color: gray;
+  font-style: italic;
+  float: right;
+  font-size: calc(1rem + ((1vw - 1.17em) * 1.1111));
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="OV BLOCKS">*/
+
+#train-dtc,
+#DtcGra,
+#DtcSta {
+  /*display: none;*/
+}
+
+#train-dtc {
+  height: 50%;
+}
+
+.schedule {
+  width: 100%;
+}
+
+.schedule th,
+.schedule td {
+  padding: 1% 2%;
+}
+
+.right {
+  text-align: right;
+}
+
+.departure .delay {
+  color: #CD0000;
+}
+
+.train {
+  border: 1px solid darkblue;
+}
+
+.train th {
+  font-size: 0.8em;
+  background-color: darkblue;
+  color: white;
+}
+
+.train td {
+  padding: 2.5% 2%;
+  color: darkblue;
+}
+
+.train .departure:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.train .departure:nth-child(odd) {
+  background-color: #e2e6ed;
+}
+
+.train .departure .destination .route {
+  line-height: 150%;
+}
+
+.train .departure .destination .note {
+  color: #CD0000;
+}
+
+.bus {
+  border: 1px solid #1b838e;
+}
+
+.bus th {
+  font-size: 0.8em;
+  background-color: #1b838e;
+  color: white;
+}
+
+.bus td {
+  padding: 2.5% 2%;
+}
+
+.bus .departure:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.bus .departure:nth-child(odd) {
+  background-color: #e0dfd7;
+}
+
+/*</editor-fold>*/
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="FAILED FOOD EXPERIMENT SLIDE">*/
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*</editor-fold>*/
+
